@@ -1,0 +1,16 @@
+#header{
+
+}
+
+.row, .col{
+    border-style: solid;
+}
+
+#trainers{
+    border-style: solid;
+}
+
+.def{
+    height: 300px;
+    width: auto;
+}
