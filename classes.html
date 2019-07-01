@@ -27,14 +27,13 @@
         }
         body, html {
             height: 100%;
-            background: gray;
 
         }
 
         #background{
             z-index: -3;
             position: fixed;
-            opacity: .6;
+            opacity: .8;
             padding: 5px;
             display: -ms-flexbox;
             display: flex;
@@ -47,7 +46,7 @@
             vertical-align: middle;
         }
 
-        #topimg{
+        #alttopimg{
             width: 100%;
         }
 
@@ -98,6 +97,7 @@
             z-index: 10;
             background-color: rgba(0, 0, 0, .8);
             width: 80%;
+
         }
 
         .col:nth-child(1n+2):hover{
@@ -117,7 +117,7 @@
 
 
         .schedule > .row{
-            height: 50px;
+            height: 70px;
             font-family: AppleGothic;
             border-color: indianred;
 
@@ -209,14 +209,21 @@
             background: indianred;
             color: black;
             z-index: 10;
-            font-size: 40px;
+            font-size: 30px;
+            height: 100px;
+            bottom: 50px;
+
 
         }
 
-        #noclass{
-            opacity: .5;
+        #insanity{
+            text-align: center;
+            background: indianred;
+            color: black;
+            z-index: 10;
+            font-size: 20px;
+            margin-top: 20px;
         }
-
     </style>
 </head>
 <body>
@@ -265,7 +272,7 @@
 </div>
 
 <header>
-    <img src="./images/topimg.jpg" id="topimg" alt="KO Boxing">
+    <img src="./images/alttopimg.jpg" id="alttopimg" alt="KO Boxing">
     <div  class="nav-fill" id="navbar">
         <a class="active" href="main.html">Home</a>
         <a href="./classes.html">Classes</a>
@@ -278,9 +285,14 @@
 <!--Week Schedule-->
 <div class="container-fluid schedule" id="week">
     <!--schedule header-->
-    <div id="groupclasses">
-        <p>KNOCKOUT GROUP SCHEDULE</p>
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4" id="groupclasses" style="width: 500px">
+            <p>KNOCKOUT GROUP SCHEDULE</p>
+        </div>
+        <div class="col-4"></div>
     </div>
+
     <!--    HOURS/DAYS-->
     <div class="row" id="days">
         <div class="col">HOURS/DAYS</div>
@@ -295,11 +307,31 @@
     <!--    5:30am-->
     <div class="row">
         <div class="col time">5:30 AM</div>
-        <div class="col">Box Fit</div>
-        <div class="col">Power Lift</div>
-        <div class="col">Box Fit</div>
-        <div class="col">Power Lift</div>
-        <div class="col">Box Fit</div>
+        <div class="col">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Cardio Fitness Class. Perfect for all levels!" style="color: white">
+                Box Fit
+            </button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="If you like lifting heavy things and putting them back down this is for you!" style="color: white">
+                Power Lift
+            </button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Cardio Fitness Class. Perfect for all levels!" style="color: white">
+                Box Fit
+            </button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="If you like lifting heavy things and putting them back down this is for you!" style="color: white">
+                Power Lift
+            </button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Cardio Fitness Class. Perfect for all levels!" style="color: white">
+                Box Fit
+            </button>
+        </div>
         <div class="col"></div>
     </div>
 
@@ -311,7 +343,11 @@
         <div class="col"></div>
         <div class="col"></div>
         <div class="col"></div>
-        <div class="col">Power Lift</div>
+        <div class="col">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="If you like lifting heavy things and putting them back down this is for you!" style="color: white">
+                Power Lift
+             </button>
+        </div>
     </div>
 
 
@@ -319,10 +355,22 @@
     <div class="row">
         <div class="col time">12 pM</div>
         <div class="col"></div>
-        <div class="col">Lunch Workout</div>
+        <div class="col">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Build up an appetite and then reward yourself with some healthy food!" style="color: white">
+                Lunch Workout
+            </button>
+        </div>
         <div class="col"></div>
-        <div class="col">Lunch Workout</div>
-        <div class="col">Lunch Workout</div>
+        <div class="col">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Build up an appetite and then reward yourself with some healthy food!" style="color: white">
+                Lunch Workout
+            </button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Build up an appetite and then reward yourself with some healthy food!" style="color: white">
+                Lunch Workout
+            </button>
+        </div>
         <div class="col"></div>
     </div>
 
@@ -330,11 +378,31 @@
     <!--    5:30pm-->
     <div class="row">
         <div class="col time">5:30 PM</div>
-        <div class="col">Cardio Box (Beginner)</div>
-        <div class="col">Extreme Box</div>
-        <div class="col">Cardio Box (Beginner)</div>
-        <div class="col">Extreme Box</div>
-        <div class="col">Cardio Box (Beginner)</div>
+        <div class="col">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Boxing and cardio hitt class for beginners" style="color: white">
+                Cardio Box (Beginner)
+            </button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Improve your boxing skills with this elite class" style="color: white">
+                Elite Box
+            </button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Boxing and cardio hitt class for beginners" style="color: white">
+                Cardio Box (Beginner)
+            </button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Improve your boxing skills with this elite class" style="color: white">
+                Elite Box
+            </button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Boxing and cardio hitt class for beginners" style="color: white">
+                Cardio Box (Beginner)
+            </button>
+        </div>
         <div class="col"></div>
     </div>
 
@@ -342,9 +410,21 @@
     <!--    6:30pm-->
     <div class="row">
         <div class="col time">6:30 PM</div>
-        <div class="col">The Body Pump</div>
-        <div class="col">Cardio Kickbox</div>
-        <div class="col">The Body Pump</div>
+        <div class="col">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Full body workout incorporating weights and calisthenics" style="color: white">
+                The Body Pump
+            </button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Learn kickboxing with this fun hitt class" style="color: white">
+                Cardio Kick Boxing
+            </button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Full body workout incorporating weights and calisthenics" style="color: white">
+                The Body Pump
+            </button>
+        </div>
         <div class="col"></div>
         <div class="col"></div>
         <div class="col"></div>
@@ -354,11 +434,31 @@
     <!--    7:30pm-->
     <div class="row">
         <div class="col time">7:30 PM</div>
-        <div class="col">Elite Boxing</div>
-        <div class="col">Elite Boxing</div>
-        <div class="col">Elite Boxing</div>
-        <div class="col">Elite Boxing</div>
-        <div class="col">Elite Boxing</div>
+        <div class="col">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Improve your boxing skills with this elite class" style="color: white">
+                Elite Box
+            </button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Improve your boxing skills with this elite class" style="color: white">
+                Elite Box
+            </button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Improve your boxing skills with this elite class" style="color: white">
+                Elite Box
+            </button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Improve your boxing skills with this elite class" style="color: white">
+                Elite Box
+            </button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Improve your boxing skills with this elite class" style="color: white">
+                Elite Box
+            </button>
+        </div>
         <div class="col"></div>
     </div>
 
@@ -366,10 +466,26 @@
     <!--    5:30pm-->
     <div class="row">
         <div class="col time">4:30 PM/ 5:30 PM</div>
-        <div class="col">Kids Boxing (Beginner)</div>
-        <div class="col">Kids Boxing (Beginner)</div>
-        <div class="col">Kids Boxing (Beginner)</div>
-        <div class="col">Kids Boxing (Beginner)</div>
+        <div class="col">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Get your little ones interested in working out and teach them boxing at the same time!" style="color: white">
+                Kids Boxing (Begginers)
+            </button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Get your little ones interested in working out and teach them boxing at the same time!" style="color: white">
+                Kids Boxing (Begginers)
+            </button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Get your little ones interested in working out and teach them boxing at the same time!" style="color: white">
+                Kids Boxing (Begginers)
+            </button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Get your little ones interested in working out and teach them boxing at the same time!" style="color: white">
+                Kids Boxing (Begginers)
+            </button>
+        </div>
         <div class="col"></div>
         <div class="col"></div>
     </div>
@@ -378,12 +494,41 @@
     <!--    6:30am-->
     <div class="row">
         <div class="col time">6:30 AM</div>
-        <div class="col">Advance Boxing</div>
-        <div class="col">Advance Boxing</div>
-        <div class="col">Advance Boxing</div>
-        <div class="col">Advance Boxing (Sparing)</div>
-        <div class="col">Advance Boxing (Sparing)</div>
+        <div class="col">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Not for beginners, This class will help you if your interested in competing!" style="color: white">
+                Advanced Boxing
+            </button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Not for beginners, This class will help you if your interested in competing!" style="color: white">
+                Advanced Boxing
+            </button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Not for beginners, This class will help you if your interested in competing!" style="color: white">
+                Advanced Boxing
+            </button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Not for beginners, This class will help you if your interested in competing!" style="color: white">
+                Advanced Boxing (sparring)
+            </button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Not for beginners, This class will help you if your interested in competing!" style="color: white">
+                Advanced Boxing (sparring)
+            </button>
+        </div>
         <div class="col"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col" id="insanity">
+            <p>Definition of insanity is doing the same thing over and over and expecting a different result. <br> Does this sound  like you at the gym?
+            <br>Our large group classes are designed to give you an intense workout <br>that you desire while helping you reach your maximum potential. </p>
+        </div>
+        <div class="col-2"></div>
     </div>
 
 </div>
@@ -438,6 +583,12 @@
             navbar.classList.remove("sticky");
         }
     }
+</script>
+
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
 </script>
 
 </body>
