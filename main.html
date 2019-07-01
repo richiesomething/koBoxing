@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KO Home</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- social media widgets-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--jquery-->
+    <script src="./jquery.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        img {
+            vertical-align: middle;
+            width: 100%;
+        }
+        body, html {
+            height: 100%;
+            background: gray;
+
+        }
+
+        #background{
+            z-index: -3;
+            position: fixed;
+            opacity: .6;
+            padding: 5px;
+        }
+        #backgroundrows {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+        .col img{
+            vertical-align: middle;
+        }
+
+        #topimg{
+            width: 100%;
+        }
+
+        #navbar {
+            overflow: hidden;
+            background-color: black;
+            z-index: 5;
+            opacity: .85;
+            padding-bottom: 0;
+            margin-bottom: 100px;
+            font-size: 30px;
+            font-family: Zapfino;
+            color: white;
+        }
+
+        #navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        #navbar a:hover {
+            background-color: indianred;
+            color: black;
+        }
+
+        #navbar a.active {
+            background-color: red;
+            color: white;
+            opacity: 1;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .container {
+            position: relative;
+
+        }
+        /* Hide the images by default */
+        .mySlides {
+            overflow: hidden;
+            position: relative;
+            top: 20px;
+        }
+
+        /* Add a pointer when hovering over the thumbnail images */
+        .cursor {
+            cursor: pointer;
+        }
+        /* Next & previous buttons */
+        .prev,
+        .next{
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+            background-color: white;
+            opacity: .5;
+        }
+
+        /* Position the "next button" to the right */
+        .next{
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Six columns side by side */
+        .col {
+            overflow: hidden;
+            width: 20%;
+            padding: 0;
+
+        }
+
+
+
+        /* Add a transparency effect for thumnbail images */
+        .demo{
+            opacity: .8;
+            padding-bottom: 100px;
+            height: 250px;
+
+        }
+
+        .active,
+        .demo:hover{
+            opacity: 1;
+        }
+
+        .social {
+            padding-top: 30px;
+            bottom: 0;
+            font-family: Zapfino;
+        }
+
+        .social a {
+            display: block;
+            text-align: center;
+            padding: 16px;
+            transition: all 0.3s ease;
+            color: white;
+            font-size: 20px;
+        }
+
+        .social a:hover {
+            background-color: #000;
+        }
+
+        .facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .google {
+            background: #dd4b39;
+            color: white;
+        }
+
+        .linkedin {
+            background: #007bb5;
+            color: white;
+        }
+        .caption-container {
+            text-align: center;
+            background-color: #222;
+            padding: 2px 16px;
+            color: white;
+        }
+        .caption-container {
+            text-align: center;
+            background-color: #222;
+            padding: 2px 16px;
+            color: white;
+        }
+        #socialLinks {
+            list-style: none;
+            width: 100%;
+            height: 90px;
+            margin: 0;
+            padding: 0;
+            white-space: nowrap;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+
+        #socialLinks > li {
+            display: inline-block;
+            width: 10%;
+            height: 100%;
+            background-color: transparent;
+        }
+
+        #socialLinks > li:nth-child(even) {
+            background-color: transparent;
+        }
+        
+    </style>
+</head>
+<body>
+
+<!--background -->
+<div class="container-fluid" id="background" style="align-content: center">
+    <div class="row" id="backgroundrows">
+        <div class="col">
+            <img src="./images/ko1.jpg" alt="">
+            <img src="./images/ko2.jpg" alt="">
+            <img src="./images/ko3.jpg" alt="">
+            <img src="./images/ko4.jpg" alt="">
+            <img src="./images/ko5.jpg" alt="">
+            <img src="./images/ko6.jpg" alt="">
+            <img src="./images/ko7.jpg" alt="">
+            <img src="./images/ko8.jpg" alt="">
+            <img src="./images/ko9.jpg" alt="">
+            <img src="./images/ko10.jpg" alt="">
+
+        </div>
+        <div class="col">
+            <img src="./images/ko11.jpg" alt="">
+            <img src="./images/ko12.jpg" alt="">
+            <img src="./images/ko13.jpg" alt="">
+            <img src="./images/ko14.jpg" alt="">
+            <img src="./images/ko1.jpg" alt="">
+            <img src="./images/ko2.jpg" alt="">
+            <img src="./images/ko3.jpg" alt="">
+            <img src="./images/ko4.jpg" alt="">
+            <img src="./images/ko5.jpg" alt="">
+            <img src="./images/ko6.jpg" alt="">
+
+        </div>
+        <div class="col">
+            <img src="./images/ko7.jpg" alt="">
+            <img src="./images/ko8.jpg" alt="">
+            <img src="./images/ko9.jpg" alt="">
+            <img src="./images/ko10.jpg" alt="">
+            <img src="./images/ko11.jpg" alt="">
+            <img src="./images/ko12.jpg" alt="">
+            <img src="./images/ko13.jpg" alt="">
+            <img src="./images/ko14.jpg" alt="">
+            <img src="./images/ko1.jpg" alt="">
+            <img src="./images/ko2.jpg" alt="">
+
+        </div>
+    </div>
+</div>
+<header>
+    <img src="./images/topIMG.jpg" id="topimg" alt="KO Boxing">
+    <div  class="container-fluid" id="navbar">
+        <a class="active" href="main.html">Home</a>
+        <a href="./classSchedule.html">Classes</a>
+        <a href="./personalTraining.html">Training</a>
+        <a href="./community.html">Community</a>
+        <a href="./signup.html" class="float-right">Sign Up</a>
+    </div>
+</header>
+
+<!--ko description-->
+<h1 style="background-color: white" >About Knockout Fitness & Boxing</h1>
+
+<!--Slide Show  -->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="mySlides">
+                <img src="./images/ko18.jpg" alt="pt">
+            </div>
+
+            <div class="mySlides">
+                <img src="./images/ko16.jpg" alt="classes">
+            </div>
+
+            <div class="mySlides">
+                <img src="./images/ko21.jpg" alt="boxing">
+            </div>
+
+            <div class="mySlides">
+                <img src="./images/ko17.jpg" alt="kids boxing">
+            </div>
+
+            <div class="mySlides">
+                <img src="./images/ko22.jpg" alt="community">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <img class="demo cursor" src="./images/ko18.jpg" onclick="currentSlide(1)">
+        </div>
+        <div class="col">
+            <img class="demo cursor" src="./images/ko16.jpg" onclick="currentSlide(2)">
+        </div>
+        <div class="col">
+            <img class="demo cursor" src="./images/ko21.jpg" onclick="currentSlide(3)">
+        </div>
+        <div class="col">
+            <img class="demo cursor" src="./images/ko17.jpg" onclick="currentSlide(4)">
+        </div>
+        <div class="col">
+            <img class="demo cursor" src="./images/ko22.jpg" onclick="currentSlide(5)">
+        </div>
+    </div>
+</div>
+
+<!--social -->
+<div class="container-fluid social" style="background-color: black">
+    <div class="row">
+        <div class="col-sm-6" style="color: lightgray">
+            <h1>Contact Us</h1>
+            <h4>Visit our Location</h4>
+            <p>Feel free to contact us with any questions you may have.</p>
+            <h4>Knock Out fitness and boxing</h4>
+            <p>1051 Yarnell Place, Oxnard, California 93033, United States</p>
+            <p>Phone: (805) 486-2269  Email: *********@koboxing.com </p>
+            <ul id="socialLinks">
+                <li>
+                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#" class="google"><i class="fa fa-google"></i></a>
+                </li>
+                <li>
+                    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-sm-6" id="map">
+            <img src="./images/komap.png" alt="map" style="padding-bottom: 30px">
+        </div>
+    </div>
+
+
+
+
+
+</div>
+
+<!--slide show js -->
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+</script>
+
+</body>
+</html>
