@@ -54,7 +54,7 @@
         #navbar {
             overflow: hidden;
             background-color: black;
-            z-index: 5;
+            z-index: 99;
             opacity: .85;
             padding-bottom: 0;
             margin-bottom: 100px;
@@ -99,6 +99,7 @@
             overflow: hidden;
             position: relative;
             top: 20px;
+            margin: 0;
         }
 
         /* Add a pointer when hovering over the thumbnail images */
@@ -203,10 +204,11 @@
 
         .caption-container {
             text-align: center;
-            background-color: #222;
-            padding-top: 5px;
+            margin-top: 20px;
             color: white;
             z-index: 10;
+            background: rgba(60, 60, 60, 0.8);
+
         }
 
         #socialLinks {
@@ -234,7 +236,7 @@
         #about{
 
             text-align: center;
-            background-color: white;
+            background: rgba(255, 255, 255, 0.6);
             padding-top: 5px;
             margin-bottom: 50px;
             margin-top: 200px;
@@ -296,8 +298,8 @@
     <img src="./images/topIMG.jpg" id="topimg" alt="KO Boxing">
     <div  class="container-fluid" id="navbar">
         <a class="active" href="main.html">Home</a>
-        <a href="./classSchedule.html">Classes</a>
-        <a href="./personalTraining.html">Training</a>
+        <a href="./classes.html">Classes</a>
+        <a href="./training.html">Training</a>
         <a href="./community.html">Community</a>
         <a href="./signup.html" class="float-right">Sign Up</a>
     </div>
@@ -451,8 +453,121 @@
         slides[slideIndex-1].style.display = "block";
         dots[slideIndex-1].className += " active";
         captionText.innerHTML = dots[slideIndex-1].alt;
+
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+
     }
 </script>
 
 </body>
 </html>
+
+
+
+<div class="container" id="week">
+    <!--    HOURS/DAYS-->
+    <div class="row">
+        <div class="col">HOURS/DAYS</div>
+        <div class="col">MONDAY</div>
+        <div class="col">TUESDAY</div>
+        <div class="col">WEDNESDAY</div>
+        <div class="col">THURSDAY</div>
+        <div class="col">FRIDAY</div>
+        <div class="col">SATURDAY</div>
+    </div>
+
+    <!--    5:30am-->
+    <div class="row">
+        <div class="col">5:30 AM</div>
+        <div class="col">Box Fit</div>
+        <div class="col">Power Lift</div>
+        <div class="col">Box Fit</div>
+        <div class="col">Power Lift</div>
+        <div class="col">Box Fit</div>
+        <div class="col"></div>
+    </div>
+
+    <!--    6:30am-->
+    <div class="row">
+        <div class="col">6:30 AM</div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col">Power Lift</div>
+    </div>
+
+
+    <!--    12pm-->
+    <div class="row">
+        <div class="col">12 pM</div>
+        <div class="col"></div>
+        <div class="col">Lunch Workout</div>
+        <div class="col"></div>
+        <div class="col">Lunch Workout</div>
+        <div class="col">Lunch Workout</div>
+        <div class="col"></div>
+    </div>
+
+
+    <!--    5:30pm-->
+    <div class="row">
+        <div class="col">5:30 PM</div>
+        <div class="col">Cardio Box (Beginner)</div>
+        <div class="col">Extreme Box</div>
+        <div class="col">Cardio Box (Beginner)</div>
+        <div class="col">Extreme Box</div>
+        <div class="col">Cardio Box (Beginner)</div>
+        <div class="col"></div>
+    </div>
+
+
+    <!--    6:30pm-->
+    <div class="row">
+        <div class="col">6:30 PM</div>
+        <div class="col">The Body Pump</div>
+        <div class="col">Cardio Kickbox</div>
+        <div class="col">The Body Pump</div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+
+
+    <!--    7:30pm-->
+    <div class="row">
+        <div class="col">7:30 PM</div>
+        <div class="col">Elite Boxing</div>
+        <div class="col">Elite Boxing</div>
+        <div class="col">Elite Boxing</div>
+        <div class="col">Elite Boxing</div>
+        <div class="col">Elite Boxing</div>
+        <div class="col"></div>
+    </div>
+
+
+    <!--    5:30pm-->
+    <div class="row">
+        <div class="col">4:30 PM/ 5:30 PM</div>
+        <div class="col">Kids Boxing (Beginner)</div>
+        <div class="col">Kids Boxing (Beginner)</div>
+        <div class="col">Kids Boxing (Beginner)</div>
+        <div class="col">Kids Boxing (Beginner)</div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+
+
+    <!--    6:30am-->
+    <div class="row">
+        <div class="col">6:30 AM</div>
+        <div class="col">Advance Boxing</div>
+        <div class="col">Advance Boxing</div>
+        <div class="col">Advance Boxing</div>
+        <div class="col">Advance Boxing (Sparing)</div>
+        <div class="col">Advance Boxing (Sparing)</div>
+        <div class="col"></div>
+    </div>
+
+</div>
