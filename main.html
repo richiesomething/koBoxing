@@ -230,7 +230,20 @@
         #socialLinks > li:nth-child(even) {
             background-color: transparent;
         }
-        
+
+        #about{
+
+            text-align: center;
+            background-color: white;
+            padding-top: 5px;
+            margin-bottom: 50px;
+            margin-top: 200px;
+            color: black;
+            z-index: 10;
+
+
+        }
+
     </style>
 </head>
 <body>
@@ -290,8 +303,21 @@
     </div>
 </header>
 
+
+
 <!--Slide Show  -->
 <div class="container">
+    <div class="caption-container" id="about">
+    <h2>About Knockout Fitness & Boxing</h2>
+        <pre>Come by KO fitness and check out our new expanded location!
+            We are a local gym that has been operating in oxnard since 1992.
+            The people here are passionate about working out and see the benefits
+            of working together to achieve our goals. This is why we focus on
+            large group classes that are always free to our members.
+            Have an ache or pain that just wont go away?
+            Ask about our trainers that specialize in rehab, massage, and cupping!
+        </pre>
+</div>
     <div class="row">
             <div class="mySlides">
                 <img src="./images/ko18.jpg" alt="Personal Training">
@@ -321,21 +347,21 @@
     </div>
 
 
-    <div class="row">
+    <div class="row" style="margin-bottom: 1000px">
         <div class="col">
-            <img class="demo cursor" alt="Work out with our highly trained, highly motivated personal trainers. Sign up today and get started for free!" src="./images/ko18.jpg" onclick="currentSlide(1)">
+            <img class="demo cursor" alt="PERSONAL TRAINING<br>Our personal trainers specialize in a wide range of skill sets, ranging from rehab work <br> to intricate and explosive workouts such as olympic lifting. We are here to help you reach your goals." src="./images/ko18.jpg" onclick="currentSlide(1)">
         </div>
         <div class="col">
-            <img class="demo cursor" alt="Motivation is never lacking in our Group fitness classes. Join a class meet gym buddies and never lack motivation again!" src="./images/ko16.jpg" onclick="currentSlide(2)">
+            <img class="demo cursor" alt="LARGE GROUP CLASSES <br> Definition of insanity is doing the same thing over and over and expecting a different result. Does this sound  like you at the gym? <br> Our large group classes are designed to give you an intense workout that you desire while helping you reach your maximum potential." src="./images/ko16.jpg" onclick="currentSlide(2)">
         </div>
         <div class="col">
-            <img class="demo cursor" alt="Take your cardio and strength to the next level. Work 1 on 1 with our expert boxing coaches!" src="./images/ko21.jpg" onclick="currentSlide(3)">
+            <img class="demo cursor" alt="BOXING ADULT/ YOUTH PROGRAMS <br> Included in your membership, our boxing program is designed to help you learn the fundamentals of stand up striking. <br> Taught by professionals to help you or your child reach every individuals goals. " src="./images/ko21.jpg" onclick="currentSlide(3)">
         </div>
         <div class="col">
-            <img class="demo cursor" alt="Want to start them young? Sign up your young ones to our youth boxing classes!" src="./images/ko17.jpg" onclick="currentSlide(4)">
+            <img class="demo cursor" alt="BOXING ADULT/ YOUTH PROGRAMS <br> Included in your membership, our boxing program is designed to help you learn the fundamentals of stand up striking. <br> Taught by professionals to help you or your child reach every individuals goals. " src="./images/ko17.jpg" onclick="currentSlide(4)">
         </div>
         <div class="col">
-            <img class="demo cursor" alt="Be part of a community that spills outside of these four walls. Join us on tough mudders, spartan races and anything else we can do to stay in shape!" src="./images/ko22.jpg" onclick="currentSlide(5)">
+            <img class="demo cursor" alt="JOIN OUR COMMUNITY <br> Be part of a community that spills outside of these four walls. <br> Join us on tough mudders, spartan races and anything else we can do to stay in shape!" src="./images/ko22.jpg" onclick="currentSlide(5)">
         </div>
     </div>
 </div>
@@ -376,6 +402,23 @@
 
 
 </div>
+
+
+<!--sticky navbar -->
+<script>
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
 
 <!--slide show js -->
 <script>
