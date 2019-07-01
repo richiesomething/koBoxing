@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f71ba39c-a406-4d76-8c0a-e7ab6810feae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/boxing.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/classes.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/default.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/koBoxingMainPic.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/powerlifting.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/training.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/koBoxingMainHtml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +30,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -77,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561929704621</updated>
-      <workItem from="1561929707344" duration="8246000" />
+      <workItem from="1561929707344" duration="9850000" />
     </task>
     <servers />
   </component>
