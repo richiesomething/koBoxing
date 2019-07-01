@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f71ba39c-a406-4d76-8c0a-e7ab6810feae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/classes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training.html" beforeDir="false" afterPath="$PROJECT_DIR$/training.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,10 +42,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.training">
     <configuration name="main.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/koBoxing/main.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="training" type="JavascriptDebugType" uri="http://localhost:63342/koBoxing/training.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.training" />
+      <item itemvalue="JavaScript Debug.main.html" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript Debug.main.html" />
@@ -62,7 +69,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561929704621</updated>
-      <workItem from="1561929707344" duration="23896000" />
+      <workItem from="1561929707344" duration="27577000" />
     </task>
     <servers />
   </component>
